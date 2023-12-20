@@ -1,6 +1,6 @@
 function solution(numbers) {
     var answer = 0;
-    let sorted=numbers.sort((a,b)=>b-a);
-    answer=sorted[0]*sorted[1];
+    const arr=numbers.sort((a,b)=>b-a);
+    answer=arr[0]*arr[1];
     return answer;
 }
