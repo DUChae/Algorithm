@@ -1,13 +1,4 @@
 function solution(s) {
-    var answer = '';
-    if(s.length%2==1){
-        //홀수, 가운데값
-        answer=s[Math.floor(s.length/2)];
-        console.log(answer);
-    }
-    else{answer=s[s.length/2-1]+s[s.length/2];
-        //짝수 , 가운데 두글자
-        
-    }
-    return answer;
+    const mid=(s.length/2)
+    return s.length%2===0?s[mid-1]+s[mid]:s[Math.floor(mid)];
 }
