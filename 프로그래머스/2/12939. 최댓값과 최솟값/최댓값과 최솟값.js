@@ -1,11 +1,10 @@
 function solution(s) {
-    let answer=[];
-    let ex=s.split(" ");
-    ex.sort((a,b)=>a-b);
-    let last=ex[ex.length-1];
+    const result=[];
+    const arr=s.split(' ').sort((a,b)=>a-b).map(v=>Number(v))
+    result.push(Math.min(...arr));
+    result.push(' ')
+    result.push(Math.max(...arr));
     
-    answer[0]=ex[0];
-    answer[1]=last;
-    let test= answer.join(" ");
-    
-return test;}
+          //Math.max(...arr) Math.min(...arr);
+    return result.join('').toString();
+}
