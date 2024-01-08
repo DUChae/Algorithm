@@ -1,14 +1,7 @@
 function solution(s) {
-    var answer = '';
-    let index=0;
-    for(let i =0; i<s.length;i++){
-        if(s[i]===" "){
-            answer+=s[i];
-            index=0;
-        }else{
-            answer+=(index%2===0)?s[i].toUpperCase():s[i].toLowerCase();
-            index++;
-        }
-    }
-return answer;
+    const str=s.toUpperCase().split(' ');
+    const result=str.map((v)=>{
+       return  v.split('').map((char,idx)=>idx%2!==0?char.toLowerCase():char).join('')
+    }).join(' ')
+    return result;
 }
