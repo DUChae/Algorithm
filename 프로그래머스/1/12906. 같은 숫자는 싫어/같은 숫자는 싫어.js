@@ -1,5 +1,7 @@
 function solution(arr)
 {
-    return arr.filter((item,index,array)=>item!==array[index+1]);
-    
-}
+    let result=[];
+     for(let i=0;i<arr.length;i++){
+         if(arr[i]!==arr[i+1]){result.push(arr[i]);}
+     }
+return result;}
