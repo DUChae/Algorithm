@@ -1,22 +1,15 @@
 function solution(s){
-//     //p 확인
-//     var regExpP=/p/ig;
-//     let foundP= (s.match(regExpP) ||[]).length;
-    
-    
-//     //y 확인
-//     var regExpY=/y/ig;
-//     let foundY= (s.match(regExpY)||[]).length;
-    
-//     return foundP===foundY
-    let countP=0;
-        let countY=0;
-    
-    const testing=s.split('').filter(item=>{
-        if(item==='p'||item==='P'){countP++;}
-        if(item==='y'||item==='Y'){countY++;}
+    let Pcount=0;
+    let Ycount=0;
+    // let str=s.toLowerCase().split('')
+    // Pcount=str.filter(el=>'p'===el).length;
+    // Ycount=str.filter(el=>'y'===el).length;
+    // return Pcount===Ycount?true:false;
+    let str=s.toLowerCase().split('').filter(el=>{
+        if('p'===el){Pcount++}
+        if('y'===el){Ycount++}
     });
-return countP===countY?true:false    
+    return Pcount===Ycount?true:false;  
+
     
-  //found에서 아무것도 찾지 못하여 Null값을 반환할 수 있다는 점을 명시해야한다. 
 }
