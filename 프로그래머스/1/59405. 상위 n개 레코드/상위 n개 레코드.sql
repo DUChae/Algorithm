@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT NAME
+FROM Animal_ins
+ORDER BY DATETIME 
+LIMIT 1
