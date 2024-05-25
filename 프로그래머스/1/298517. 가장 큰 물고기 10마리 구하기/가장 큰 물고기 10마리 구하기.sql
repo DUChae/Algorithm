@@ -1,0 +1,5 @@
+-- 코드를 작성해주세요
+SELECT ID, LENGTH
+FROM Fish_info
+ORDER BY LENGTH DESC , ID
+LIMIT 10
