@@ -1,0 +1,9 @@
+-- 코드를 작성해주세요
+SELECT COUNT( *) AS FISH_COUNT
+FROM Fish_info
+WHERE LENGTH IS NULL
+
+
+# SELECT *
+# FROM Fish_info
+# WHERE LENGTH < 11 OR LENGTH IS NULL
